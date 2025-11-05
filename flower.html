@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="img/opc1.jpg" type="image/x-icon" />
-    <title>Flower</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="img/opc1.jpg" type="image/x-icon" />
+  <title>Flower</title>
+</head>
 
-
-
-    <body> 
-      <h1 class="titulo">Eres mi hoy y todos mis mañanas. - Te amo Ana</h1>
+<body class="container"> 
+  
+  <h1 class="titulo">Eres mi hoy y todos mis mañanas. - Te amo Ana</h1>
+  
+  <div id="lyrics">
+    </div>
+  
+  <div class="flowers">
     
-      <div id="lyrics">
           
-      </div>
-
-      <body style="background-color: black;"></body>
-      <!-- partial:index.partial.html-->
-       
-      <body class="container">
-        <div class="flowers">
-      
           <div class="flower flower--1">
             <div class="flower__leafs flower__leafs--1">
               <div class="flower__leaf flower__leaf--1"></div>
@@ -449,23 +444,22 @@
         </div>
         <div>
 
-          <audio id="myAudio" src="sound/TodoCambioCamila.mp3" autoplay controls style="visibility: hidden;"></audio> 
-      
+    <audio id="myAudio" src="sound/TodoCambioCamila.mp3" autoplay controls style="visibility: hidden;"></audio> 
+  
+  
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var audio = document.getElementById("myAudio");
+        audio.play().catch(function(error) {
+            console.log("El navegador bloqueó la reproducción automática.");
+        });
+    });
+  </script>
 
+  <script src="main.js"></script>
+    <script  src="./script.js"></script>
+    <script src="anim.js"></script>
     
-      <!-- partial -->
-      <script>
-          document.addEventListener("DOMContentLoaded", function() {
-              var audio = document.getElementById("myAudio");
-              audio.play().catch(function(error) {
-                  console.log("El navegador bloqueó la reproducción automática.");
-              });
-          });
-      </script>
-
-      <script src="main.js"></script>
-        <script  src="./script.js"></script>
-        <script src="anim.js"></script>
-      
-    </body>
+</body>
 </html>

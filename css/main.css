@@ -10,6 +10,9 @@
   --dark-color: #000;
 }
 
+html {
+  overflow: hidden;
+}
 
 body {
   display: flex;
@@ -27,16 +30,30 @@ body {
   color: white;
   position: absolute;
   margin-bottom: 20%;
-  z-index: 1;
+  
+  /* --- CAMBIOS --- */
+  z-index: 201; /* ¡Ahora está por encima de las burbujas (z-index: 200)! */
+  text-align: center; /* Centra las líneas de la letra */
+  width: 90%; /* Evita que el texto toque los bordes */
+  left: 5%; /* Centra el bloque en la pantalla */
+  /* --------------- */
+
   font-weight: bold;
   letter-spacing: 4px;
+  margin-bottom: 23%;
+
+  /* Opcional: Descomenta esto si quieres un fondo suave para leer mejor */
+  /* background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  */
 }
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
       font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
-      margin-bottom: 530px;
-      letter-spacing: 3px;
+      margin-bottom: 75%;
+      z-index: 201
   }
 
 }
@@ -1619,7 +1636,7 @@ body, h1, p {
 /* Estilos generales */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
+  background-color: black;
   color: #333;
 }
 
@@ -1627,6 +1644,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: black;
 }
 
 h1 {
