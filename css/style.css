@@ -42,7 +42,7 @@ body{
 
     white-space: nowrap;
 
-    font-size: clamp(1.5rem, 8vw, 4rem);
+    font-size: clamp(1.5rem, 9vw, 4rem);
 
     overflow: hidden;
     text-align: center;
@@ -94,12 +94,12 @@ body{
 @media screen and (max-width:574px){
     .greetings{
         display: block;
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-weight: 800;
         text-align: center;
     }
     .description{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     
     .button a{
