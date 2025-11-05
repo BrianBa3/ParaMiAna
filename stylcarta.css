@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+
+h1 {
+    font-size: 32px;
+    font-family: 'Halant', serif;
+    font-weight: bold;
+}
+
+.exclamacion {
+    font-size: 32px;
+    font-family: 'Halant', serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+.brush-script {
+    font-family: "Brush Script MT", cursive;
+    font-weight: 10;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.mensaje-largo {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.fecha {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-family: "Brush Script MT", cursive;
+    margin-left: 100px;
+    margin-right: 110px;
+    margin-top: 100px;
+    color: #000000;
+}
+
+.teamo {
+    font-family: "Brush Script MT", cursive;
+    font-weight: 1;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corner-img2 {
+    width: 250px;
+    height: 300px;
+}
+
+p {
+    margin-bottom: 1.2em;
+    font-size: 18px;
+    line-height: 1.5;
+}
+strong {
+    color: #d9534f; /* Un toque de color para las negritas */
+}
+.salutation {
+    font-style: italic;
+}
+.signature {
+    margin-top: 30px;
+    text-align: left;
+    font-style: italic;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .brush-script,
+    .mensaje-largo,
+    .fecha {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .teamo {
+        font-size: 30px;
+    }
+
+    .corner-img2 {
+        width: 150px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .texto {
+        margin-left: 20px;
+    }
+}
+
+
+
